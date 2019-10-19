@@ -1,13 +1,13 @@
 <img src="files/icon.png" align="right" width="80" height="100" /> 
 
-# Co-Pilot [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Kanganru [](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/)
 
 =======
 
 <img src="files/teamM.png" align="left" width="220" height="230" />
 
-This project has been developed in July 2019 during the [Yuuvis Hackathon in San Francisco](https://yuuvishacksanfrancisco-platform.bemyapp.com/#/event) organized by Yuuvis and Bemyapp with the following Sponsors that we thank you so much for the great resource they were able to provide. 
-[Presentation](https://docs.google.com/presentation/d/e/2PACX-1vSQrr-x2NHpnR4NbWxdfWfRsSzEI1edJEWXURU3Dcdk4QclXITcpPtY7lMHYptcmrXLRT18oWjUceQv/pub?start=false&loop=false&delayms=3000&slide=id.g52191f22dd_1_12)
+This project has been developed in October 2019 during the AEC Tech Hackathon organized by TTCore Studio with the following Sponsors that we thank you so much for the great resource they were able to provide. 
+[Presentation](https://docs.google.com/presentation/d/1PY0RU9T0NnZnrGIihKm32UpJGw9H2y3DOEGgaJlzG2o/edit?ts=5dab4ee7#slide=id.g640068be55_0_5)
 
 <img src="files/1.png" align="right" width="100" height="100" /> 
 
