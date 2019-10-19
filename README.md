@@ -14,10 +14,10 @@ This project has been developed in July 2019 during the [Yuuvis Hackathon in San
 ## Authors
 
 * **Alberto Tono** - *San Francisco Computational Design Institute* - [SFCDI](https://www.sfcdi.org)
-* **Raiz Munshi** - *Yahoo* - [Yahoo](https://www.yahoo.com)
-* **Unicorn** - *UsData* 
+* **Valentine Noves** - *ENGwork* 
+* **Constantina Tsiara** - *Workshop* 
 
-We participate on the *Search and Collaboration* challenge: 
+
 
 * New Hire orientation and navigation
 * Improving Search for new employee with Fuzzy Matching
