@@ -1,8 +1,10 @@
 ## Depth detection
 
-- Collect render images from SketchGan project and convert to grey scale
+- Ideally Convert image to Semantic Segmentation https://github.com/GeorgeSeif/Semantic-Segmentation-Suite and cut sky and ground
 
-- We use monodepth trained models to predict the 2D image depth https://github.com/mrharicot/monodepth, be sure to fullfill all the needs of this models
-prior to test it!
+- Collect render images from SketchGan project and convert to grey scale 
 
-- 
+- Firt attempt https://github.com/mrharicot/monodepth
+- Second attempt https://github.com/nianticlabs/monodepth2
+- Third attempt https://github.com/iro-cp/FCRN-DepthPrediction
+- Meshlab http://www.meshlab.net/#download
