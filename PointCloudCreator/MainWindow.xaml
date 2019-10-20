@@ -5,14 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="PointCloudGenerator" Height="450" Width="756">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="48,251,0,0" VerticalAlignment="Top" Width="518" Height="128" Click="click_button"/>
-        <TextBox  x:Name="ExcelFileTxtBox" HorizontalAlignment="Left" Height="50" Margin="48,69,0,0" TextWrapping="Wrap" Tag="Select origin rack" VerticalAlignment="Top" Width="518"/>
+        <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Margin="48,304,0,0" VerticalAlignment="Top" Width="662" Height="75" Click="click_button"/>
+        <TextBox  x:Name="ExcelFileTxtBox" HorizontalAlignment="Left" Height="50" Margin="48,69,0,0" TextWrapping="Wrap" Tag="Select origin rack" VerticalAlignment="Top" Width="557"/>
 
-        <Button x:Name="AddElement01Button" Content="..." Margin="608,69,76,0" VerticalAlignment="Top" Click="FindExcelFile_Click" ToolTip="Elements will be colorized by its prefix" Height="50"/>
-        <TextBox  x:Name="ExcelFileTxtBox_Copy" HorizontalAlignment="Left" Height="48" Margin="48,180,0,0" TextWrapping="Wrap" Tag="Select origin rack" VerticalAlignment="Top" Width="518"/>
-        <Button x:Name="AddElement01Button_Copy" Content="..." Margin="608,178,76,0" VerticalAlignment="Top" Click="FindExcelFile_Click1" ToolTip="Elements will be colorized by its prefix" Height="50"/>
+        <Button x:Name="AddElement01Button" Content="..." Margin="646,69,38,0" VerticalAlignment="Top" Click="FindExcelFile_Click" ToolTip="Select Location of HeatMap" Height="50"/>
+        <TextBox  x:Name="ExcelFileTxtBox_Copy" HorizontalAlignment="Left" Height="48" Margin="48,180,0,0" TextWrapping="Wrap" Tag="Select origin rack" VerticalAlignment="Top" Width="557"/>
+        <Button x:Name="AddElement01Button_Copy" Content="..." Margin="646,178,38,0" VerticalAlignment="Top" Click="FindExcelFile_Click1" ToolTip="Select location of original image" Height="50"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="48,30,0,0" TextWrapping="Wrap" Text="HeatMap Location" VerticalAlignment="Top" Width="120"  BorderBrush="White" FontSize="14"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="20" Margin="48,146,0,0" TextWrapping="Wrap" Text="Original Picture Location" VerticalAlignment="Top" Width="120" BorderBrush="White" FontSize="14"/>
 
     </Grid>
 </Window>

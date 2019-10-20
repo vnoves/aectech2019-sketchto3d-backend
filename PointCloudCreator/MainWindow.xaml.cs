@@ -15,21 +15,6 @@ using System.Windows.Shapes;
 using System.Drawing;
 using Color = System.Drawing.Color;
 using System.Windows.Forms;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Forms;
 using System.IO;
 using MessageBox = System.Windows.MessageBox;
 
@@ -50,17 +35,17 @@ namespace WpfApp
         {
             List<string> FileWritte = new List<string>();
 
-            Bitmap myBitmap = new Bitmap(ExcelFileTxtBox.Text);
-            Bitmap myBitmapCopy = new Bitmap(ExcelFileTxtBox_Copy.Text);
-            int n = myBitmap.Height;
-            int m = myBitmap.Width;
+            Bitmap HeatMapBitmap = new Bitmap(ExcelFileTxtBox.Text);
+            Bitmap OrgnlPicBitmap = new Bitmap(ExcelFileTxtBox_Copy.Text);
+            int n = HeatMapBitmap.Height;
+            int m = HeatMapBitmap.Width;
             int[,,] arrayImg = new int[n, m, 3];
-            for (int x = 0; x < myBitmap.Width; x++)
+            for (int x = 0; x < HeatMapBitmap.Width; x++)
             {
-                for (int y = 0; y < myBitmap.Height; y++)
+                for (int y = 0; y < HeatMapBitmap.Height; y++)
                 {
-                    Color pixelColor = myBitmap.GetPixel(x, y);
-                    Color pixelColorCopy = myBitmapCopy.GetPixel(x, y);
+                    Color pixelColor = HeatMapBitmap.GetPixel(x, y);
+                    Color pixelColorCopy = OrgnlPicBitmap.GetPixel(x, y);
                     float b = pixelColor.GetBrightness() * 1000;
 
                     FileWritte.Add( x.ToString() + "," + y.ToString() + "," + b.ToString()  +"," + pixelColorCopy.R.ToString() + "," + pixelColorCopy.B.ToString() + "," + pixelColorCopy.G.ToString() + "," + Environment.NewLine);
@@ -71,9 +56,6 @@ namespace WpfApp
             string combindedString = string.Join("-", FileWritte);
             string path = @"C:\Users\V. Noves\Downloads\Test.txt";
             File.AppendAllLines(path, new[] { combindedString });
-
-            //System.IO.File.WriteAllText(@"C:\Users\V. Noves\Test.txt", "sss");
-
             MessageBox.Show("ddd", "sss");
         }
 
@@ -97,5 +79,6 @@ namespace WpfApp
             if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 ExcelFileTxtBox_Copy.Text = ofd.FileName;
         }
+
     }
 }
