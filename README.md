@@ -1,4 +1,4 @@
-# Kanganru 
+# GANgaru
 *Jumping from Sketches to 3D*
 =====================================================
 
@@ -15,7 +15,7 @@ This project has been developed in October 2019 during the AEC Tech Hackathon or
 * **Constantina Tsiara** - *Workshop / APD* 
 * **Pablo Derendinger** - *ENGwork*
 * **Jeffrey Moser** - *Grimshaw*
-* **Lexi Fritz** - 
+* **Lexi Fritz** - *Tetra Tech*
 * **Rachel Hartley** - *Autodesk*
 
 Feature
@@ -30,8 +30,8 @@ https://docs.google.com/presentation/d/1uL1N66qP9okW5KsW7J7cxcwzE3m1eett8EwkJiCc
 
 We developed the back end part of the Outback project that has been divided in 2 parts: 
 
-* Kanganru
-* jelly
+* GANgaru
+* Joey
 
 
 ## Getting Started
