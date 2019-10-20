@@ -1,10 +1,10 @@
 <img src="files/icon.png" align="right" width="80" height="100" /> 
 
-# Kanganru [](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/)
+# Kanganru [](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]
 
 =======
 
-<img src="files/teamM.png" align="left" width="220" height="230" />
+<img src="files/kanganru.png" align="left" width="220" height="230" />
 
 This project has been developed in October 2019 during the AEC Tech Hackathon organized by TTCore Studio with the following Sponsors that we thank you so much for the great resource they were able to provide. 
 [Presentation](https://docs.google.com/presentation/d/1PY0RU9T0NnZnrGIihKm32UpJGw9H2y3DOEGgaJlzG2o/edit?ts=5dab4ee7#slide=id.g640068be55_0_5)
@@ -15,8 +15,11 @@ This project has been developed in October 2019 during the AEC Tech Hackathon or
 
 * **Alberto Tono** - *San Francisco Computational Design Institute* - [SFCDI](https://www.sfcdi.org)
 * **Valentine Noves** - *ENGwork* 
-* **Constantina Tsiara** - *Workshop* 
-
+* **Constantina Tsiara** - *Workshop / APD* 
+* **Pablo Derendinger** - *ENGwork*
+* **Jeffrey Moser** - *Grimshaw*
+* **Lexi Fritz** - 
+* **Rachel Hartley** - *Autodesk*
 
 
 * New Hire orientation and navigation
