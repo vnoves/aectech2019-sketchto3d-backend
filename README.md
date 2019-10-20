@@ -15,7 +15,7 @@ This project has been developed in October 2019 during the AEC Tech Hackathon or
 * **Constantina Tsiara** - *Workshop / APD* 
 * **Pablo Derendinger** - *ENGwork*
 * **Jeffrey Moser** - *Grimshaw*
-* **Lexi Fritz** - 
+* **Lexi Fritz** - *Tetra Tech*
 * **Rachel Hartley** - *Autodesk*
 
 Feature
