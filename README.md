@@ -1,5 +1,5 @@
 # Kanganru 
-Jumping from Sketches to 3D
+*Jumping from Sketches to 3D*
 =====================================================
 
 <img src="kanganru.png" align="left" width="100" height="150" />
