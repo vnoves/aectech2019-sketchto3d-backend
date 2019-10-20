@@ -4,7 +4,7 @@
 
 =======
 
-<img src="files/image/kanganru.png" align="left" width="220" height="230" />
+<img src="files/image/kanganru.PNG" align="left" width="220" height="230" />
 
 This project has been developed in October 2019 during the AEC Tech Hackathon organized by TTCore Studio with the following Sponsors that we thank you so much for the great resource they were able to provide. 
 [Presentation](https://docs.google.com/presentation/d/1PY0RU9T0NnZnrGIihKm32UpJGw9H2y3DOEGgaJlzG2o/edit?ts=5dab4ee7#slide=id.g640068be55_0_5)
