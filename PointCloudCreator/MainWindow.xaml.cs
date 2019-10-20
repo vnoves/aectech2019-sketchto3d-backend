@@ -1,0 +1,101 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.Drawing;
+using Color = System.Drawing.Color;
+using System.Windows.Forms;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Forms;
+using System.IO;
+using MessageBox = System.Windows.MessageBox;
+
+namespace WpfApp
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+        }
+
+        private void click_button(object sender, RoutedEventArgs e)
+        {
+            List<string> FileWritte = new List<string>();
+
+            Bitmap myBitmap = new Bitmap(ExcelFileTxtBox.Text);
+            Bitmap myBitmapCopy = new Bitmap(ExcelFileTxtBox_Copy.Text);
+            int n = myBitmap.Height;
+            int m = myBitmap.Width;
+            int[,,] arrayImg = new int[n, m, 3];
+            for (int x = 0; x < myBitmap.Width; x++)
+            {
+                for (int y = 0; y < myBitmap.Height; y++)
+                {
+                    Color pixelColor = myBitmap.GetPixel(x, y);
+                    Color pixelColorCopy = myBitmapCopy.GetPixel(x, y);
+                    float b = pixelColor.GetBrightness() * 1000;
+
+                    FileWritte.Add( x.ToString() + "," + y.ToString() + "," + b.ToString()  +"," + pixelColorCopy.R.ToString() + "," + pixelColorCopy.B.ToString() + "," + pixelColorCopy.G.ToString() + "," + Environment.NewLine);
+                }
+            }
+
+
+            string combindedString = string.Join("-", FileWritte);
+            string path = @"C:\Users\V. Noves\Downloads\Test.txt";
+            File.AppendAllLines(path, new[] { combindedString });
+
+            //System.IO.File.WriteAllText(@"C:\Users\V. Noves\Test.txt", "sss");
+
+            MessageBox.Show("ddd", "sss");
+        }
+
+
+        private void FindExcelFile_Click(object sender, RoutedEventArgs e)
+        {
+            // Fill a TextBox with the Path of the Excel file
+            // Choosen by the user
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "(*png)|*.png";
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                ExcelFileTxtBox.Text = ofd.FileName;
+        }
+
+        private void FindExcelFile_Click1(object sender, RoutedEventArgs e)
+        {
+            // Fill a TextBox with the Path of the Excel file
+            // Choosen by the user
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "(*png)|*.png";
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                ExcelFileTxtBox_Copy.Text = ofd.FileName;
+        }
+    }
+}
