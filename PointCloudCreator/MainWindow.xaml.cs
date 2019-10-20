@@ -46,17 +46,16 @@ namespace WpfApp
                 {
                     Color pixelColor = HeatMapBitmap.GetPixel(x, y);
                     Color pixelColorCopy = OrgnlPicBitmap.GetPixel(x, y);
-                    float b = pixelColor.GetBrightness() * 1000;
-
-                    FileWritte.Add( x.ToString() + "," + y.ToString() + "," + b.ToString()  +"," + pixelColorCopy.R.ToString() + "," + pixelColorCopy.B.ToString() + "," + pixelColorCopy.G.ToString() + "," + Environment.NewLine);
+                    float b = pixelColor.GetBrightness() * 3000;
+                    FileWritte.Add( x.ToString() + "," + y.ToString() + "," + b.ToString()  +"," + pixelColorCopy.R.ToString() + "," + pixelColorCopy.G.ToString() + "," + pixelColorCopy.B.ToString() + "," + Environment.NewLine);
+                    
                 }
             }
-
 
             string combindedString = string.Join("-", FileWritte);
             string path = @"C:\Users\V. Noves\Downloads\Test.txt";
             File.AppendAllLines(path, new[] { combindedString });
-            MessageBox.Show("ddd", "sss");
+            MessageBox.Show("Succes", "Success");
         }
 
 
